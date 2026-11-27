@@ -1,8 +1,8 @@
 # World News — 27 November 2026 (one-image summary)
 
-[![make.fun · news-image-20261127](https://make.fun/badge/news-image-20261127.svg)](https://make.fun/bounty/news-image-20261127)
-[![make.fun · entries](https://make.fun/badge/news-image-20261127/entries.svg)](https://make.fun/bounty/news-image-20261127)
-[![make.fun · prize](https://make.fun/badge/news-image-20261127/prize.svg)](https://make.fun/bounty/news-image-20261127)
+[![make.fun · news-image-20261127](https://make.fun/badge/news-image-20261127.svg)](https://make.fun/bounty/news-image-20261127?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127)
+[![rank](https://make.fun/badge/news-image-20261127/sutenosakamoto-gif/news-image-20261127/rank.svg)](https://make.fun/bounty/news-image-20261127/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127)
+[![reward](https://make.fun/badge/news-image-20261127/sutenosakamoto-gif/news-image-20261127/reward.svg)](https://make.fun/bounty/news-image-20261127?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261127)
 
 One broadsheet page summing up Friday 27 November 2026: the EU summit
 ending with no deal on the budget or the Ukraine loan, a drone crossing
