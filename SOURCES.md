@@ -376,3 +376,110 @@ one party's claim, attribution kept in the headline/summary.
 - Latin America has no verified Friday-dated wire item found in the
   region pass; the Thursday Venezuela items are named in DATE CHECK
   rather than presented as Friday news.
+
+---
+
+# Stage 2 additions (28 Nov update pass)
+
+The stage-2 pass re-audited the day against three wrap-up sources —
+Reuters' daily summary ("Black Friday, SpaceX satellites and Iraq's
+crackdown", 27 Nov) and Reuters Morning Bid ("China boost lifts
+tech"), the AP News Summary of 27 Nov (3:14 p.m. EST), and the BBC
+World feed for 27 Nov — and swapped every market figure to Friday
+closes. The stage-1 entries above keep their stage-1 numbers; the
+entries below carry the FINAL story numbers used on the submitted
+page. Final numbering map (featured): old 3 (China stocks) is now 6;
+old 6, 10, 11, 12 are demoted to briefs 23, 35, 34, 30; old 14 is
+merged into brief 32; old brief 34 (China cabinet) is now featured
+as 10.
+
+### 3. Wall Street jumps to its best week in over a year — CONFIRMED
+- Half-day Friday session closes: S&P 500 7,297.49 (+1.60%), Nasdaq
+  24,129.50 (+2.31%), Dow 50,774.94 (+1.18%), Russell 2000 2,750.30
+  (+1.71%). Week: S&P +5.6% (best since April 2025; best Thanksgiving
+  week since 2008), Dow +5.46%, Nasdaq +6.68%. Chip index +4.7%
+  (SanDisk +16%, Micron +7.6%); VIX 23.81.
+- Source: AP market tally via Straits Times, 27 Nov 2026, and
+  Dependability, "Afternoon Market Commentary — November 27, 2026";
+  several further outlets agree on the closing levels.
+
+### 11. Nine Ukrainian children return from Russia — CONFIRMED
+- Nine Ukrainian children were brought home from Russia in a return
+  mediated by Melania Trump; 2,875 children have been brought home
+  in all.
+- Source: AP (via asiaone / bastillepost), 27 Nov 2026; Kyiv
+  Independent, 27 Nov 2026 16:05; Ukrinform.
+
+### 12. Russia fires 155 drones at Ukraine overnight — CONFIRMED
+- Ukraine's air force reported 155 Russian drones overnight, 110
+  downed, with hits at 27 sites; Estonia scrambled NATO jets.
+- Source: Interfax-Ukraine; Ukrinform; Kyiv Post (air force
+  statement); ERR (Estonia), all 27 Nov 2026.
+
+### 14. Brazil markets rally as Lula taps bank chief — CONFIRMED
+- The real gained 4.7% and the Bovespa 3.9% after President Lula
+  tapped a market-friendly finance chief (Bradesco chairman).
+- Source: Reuters, 27 Nov 2026 — "Brazilian markets rally after
+  Lula taps Bradesco chairman for finance chief".
+
+### 17. Iraq PM moves to rein in armed groups — REPORTED
+- Iraq's prime minister moved to assert state authority over armed
+  groups, with President Trump backing the effort.
+- Source: Reuters, 27 Nov 2026 — "Trump backs Iraqi leader's
+  efforts to assert more state authority".
+
+### 19. Armed men kill 17 in Nigeria's Plateau state — CONFIRMED
+- Source: Reuters, 27 Nov 2026 — "Armed men kill 17 villagers in
+  Nigeria's Plateau state".
+
+### 24. Kenya cult leader convicted over 123 more deaths — CONFIRMED
+- Source: BBC, 27 Nov 2026 17:19 — "Kenyan doomsday cult leader
+  convicted over further 123 deaths".
+
+### 25. Eight dead on migrant boat off Canary Islands — CONFIRMED
+- Source: Reuters, 27 Nov 2026 — "At least eight found dead on
+  migrant boat off Spain's Canary Islands".
+
+### 26. Thanksgiving online sales $37.2bn, +4.6% — OFFICIAL
+- Salesforce put global Thanksgiving online sales at $37.2bn
+  (+4.6%) and US sales at $8.8bn (+5.1%).
+- Source: Salesforce figures via Dependability, 27 Nov 2026.
+  Replaces stage-1 brief 27 (the half-day session notice).
+
+### 28. US Navy disables ship breaking Iran port blockade — REPORTED
+- Source: AP News Summary, 27 Nov 2026, 3:14 p.m. EST.
+
+### 37. Spain parties make final pitch before Sunday's vote — CONFIRMED
+- Source: Reuters / BBC, 27 Nov 2026 (election itself is Sun 29 Nov
+  and is named in DATE CHECK as NOT YET).
+
+### 40. Argentina bans central bank printing for the government — CONFIRMED
+- Source: AP, 27 Nov 2026 — "Argentina bans its central bank from
+  printing money for the government".
+
+### 42. CPTPP to open accession talks — CONFIRMED
+- Source: Reuters, 27 Nov 2026 — "CPTPP to start talks on accession
+  of UAE, Indonesia, Philippines".
+
+## Updated figures (stage 2)
+- Brief 21 (was 26): dollar index Friday close 104.04 (+0.25%),
+  replacing the intraday 103.81. Dollar/yen 159.51. Source: Reuters
+  forex coverage via vietnam.vn / devdiscourse, 27 Nov 2026.
+- Brief 31 (was 30): euro Friday close $1.0933, replacing $1.0964.
+  Kiwi $0.5482 kept (close not separately confirmed). Same source.
+- Brief 38 (was 31): Brent $96.14 confirmed as the Friday close
+  (-0.4% on the day, +3.9% for the week) in the Reuters global
+  markets wrap; the $97.30 seen at 09:35 GMT was an intraday high.
+- Brief 33 (was 33): two-year Treasury yield 4.6705% — a Friday
+  closing value could NOT be confirmed (half-day session); kept as
+  the near-close figure from stage 1, without a "close" claim.
+- Brief 43 (was 37): China PMI 49.4 is a Reuters poll FORECAST;
+  the official release is due 30 Nov. Labelled as a poll on the page.
+
+## Dropped at stage 2
+- Stage-1 briefs 22 (Congo mpox — thin sourcing), 24 (Japan Tobacco
+  — single-company share move), 28 (Macy's balloons — duplicate of
+  the nor'easter story), 29 (NJ Transit — same), 36 (Sandpapergate
+  forum — colour item) were removed.
+- Stage-1 brief 27 (US markets reopen for a half-day session) was
+  superseded by the close itself (lead 3 and brief 26 above).

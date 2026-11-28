@@ -12,12 +12,12 @@
 PAPER_NAME = "THE DAY'S WORLD"
 DAY_LINE = "FRIDAY 27 NOVEMBER 2026"
 DEK_LINE = ("EU summit ends with no deal  \u00b7  A drone crosses into Latvia  "
-            "\u00b7  China stocks jump 12%")
+            "\u00b7  Wall Street\u2019s best week in a year")
 
-REGION_TALLY = [("EUROPE", 5), ("ASIA-PACIFIC", 14), ("MIDDLE EAST", 3),
-                ("AFRICA", 3), ("NORTH AMERICA", 5), ("OCEANIA", 2),
-                ("GLOBAL", 5)]
-STORY_TOTAL = 37
+REGION_TALLY = [("EUROPE", 9), ("ASIA-PACIFIC", 13), ("MIDDLE EAST", 5),
+                ("AFRICA", 4), ("NORTH AMERICA", 3), ("OCEANIA", 1),
+                ("LATIN AMERICA", 2), ("GLOBAL", 6)]
+STORY_TOTAL = 43
 
 # Each featured item: number, region, certainty, headline, deck (two
 # short lines), chip text for the picture, picture kind, map position
@@ -31,10 +31,10 @@ FEATURED = [
      "head": "Drone crosses into Latvia as Russia downs 40-plus",
      "deck": "Early-hours violation; Leningrad downs 40+ drones.",
      "chip": "40+ DOWNED", "art": "drone", "geo": (24.1, 56.95)},
-    {"no": 3, "region": "ASIA-PACIFIC", "level": "CONFIRMED",
-     "head": "China stocks jump as Beijing vows market support",
-     "deck": "Shanghai +3%, STAR 50 +12% as Beijing vows support.",
-     "chip": "+12%", "art": "bars", "geo": (121.5, 31.2)},
+    {"no": 3, "region": "NORTH AMERICA", "level": "CONFIRMED",
+     "head": "Wall Street jumps to its best week in over a year",
+     "deck": "S&P 500 +1.6% to 7,297.49; Nasdaq +2.3%, Dow +1.2%.",
+     "chip": "BEST WEEK +5.6%", "art": "bars", "geo": (-74.0, 40.7)},
     {"no": 4, "region": "GLOBAL", "level": "OFFICIAL",
      "head": "UN warns famine risks rising in 16 hotspots",
      "deck": ("Sudan, S. Sudan, Somalia, N. Nigeria, Yemen at gravest "
@@ -45,15 +45,15 @@ FEATURED = [
      "deck": ("Civilian ships linked as a bridge; drills in Dacheng Bay, "
               "280 km away."),
      "chip": "280 KM", "art": "bridge", "geo": (118.0, 24.0)},
-    {"no": 6, "region": "ASIA-PACIFIC", "level": "OFFICIAL",
-     "head": "South Korea sends six North Koreans home",
-     "deck": "Rescued from a drifting boat; a seventh chose to remain.",
-     "chip": "6 SENT HOME", "art": "boat", "geo": (129.0, 37.0)},
+    {"no": 6, "region": "ASIA-PACIFIC", "level": "CONFIRMED",
+     "head": "China stocks jump as Beijing vows market support",
+     "deck": "Shanghai +3%, STAR 50 +12% as Beijing vows support.",
+     "chip": "+12%", "art": "bars", "geo": (121.5, 31.2)},
     {"no": 7, "region": "NORTH AMERICA", "level": "CONFIRMED",
      "head": "Black Friday after the nor\u2019easter",
      "deck": ("900,000 lost power at the peak; flood warnings into "
               "Friday."),
-     "chip": "900,000 OUT", "art": "storm", "geo": (-74.0, 40.7)},
+     "chip": "900,000 OUT", "art": "storm", "geo": (-71.0, 42.4)},
     {"no": 8, "region": "MIDDLE EAST", "level": "OFFICIAL",
      "head": "Erdogan ratifies the Mecca defence pact",
      "deck": "Pact with Pakistan and Saudi Arabia; ratified 5 Nov.",
@@ -63,26 +63,26 @@ FEATURED = [
      "deck": ("From Bangladesh to India amid unrest; $400m+ production "
               "losses."),
      "chip": "$254M", "art": "garment", "geo": (90.4, 23.8)},
-    {"no": 10, "region": "ASIA-PACIFIC", "level": "REPORTED",
-     "head": "Indonesia nickel tycoon faces treason claim",
-     "deck": "Official says Arif Kurniawan may have fled to China.",
-     "chip": "TREASON?", "art": "gavel", "geo": (106.8, -6.2)},
-    {"no": 11, "region": "MIDDLE EAST", "level": "REPORTED",
-     "head": "Iran warns on Gulf military presence",
-     "deck": "Tehran says a foreign presence would heighten tensions.",
-     "chip": "GULF", "art": "ship", "geo": (56.0, 26.0)},
+    {"no": 10, "region": "ASIA-PACIFIC", "level": "OFFICIAL",
+     "head": "Beijing plans new market-support policies",
+     "deck": "Cabinet to push dividends, buybacks; stabilisation steps.",
+     "chip": "NEW POLICIES", "art": "bank", "geo": (116.4, 39.9)},
+    {"no": 11, "region": "EUROPE", "level": "CONFIRMED",
+     "head": "Nine Ukrainian children return from Russia",
+     "deck": "Melania Trump mediated; 2,875 children brought home in all.",
+     "chip": "9 CHILDREN HOME", "art": "boat", "geo": (31.3, 51.5)},
     {"no": 12, "region": "EUROPE", "level": "CONFIRMED",
-     "head": "Marseille fan violence condemned; 11 hurt",
-     "deck": "French and Bulgarian leaders condemn Thursday\u2019s clashes.",
-     "chip": "11 HURT", "art": "pitch", "geo": (5.4, 43.3)},
+     "head": "Russia fires 155 drones at Ukraine overnight",
+     "deck": "110 downed, hits at 27 sites; Estonia scrambles NATO jets.",
+     "chip": "155 DRONES", "art": "drone", "geo": (35.2, 47.8)},
     {"no": 13, "region": "AFRICA", "level": "CONFIRMED",
      "head": "Gavi restores malaria vaccine funding",
      "deck": "$30m first payment to Dakar\u2019s Institut Pasteur.",
      "chip": "$30M", "art": "vial", "geo": (-17.4, 14.7)},
-    {"no": 14, "region": "GLOBAL", "level": "CONFIRMED",
-     "head": "Asian shares steady; dollar\u2019s third monthly gain",
-     "deck": "Nikkei +0.7%, Kospi +2%, MSCI Asia ex-Japan +0.5%.",
-     "chip": "+0.7%", "art": "candles", "geo": (114.2, 22.3)},
+    {"no": 14, "region": "LATIN AMERICA", "level": "CONFIRMED",
+     "head": "Brazil markets rally as Lula taps bank chief",
+     "deck": "Real +4.7%, Bovespa +3.9% on market-friendly pick.",
+     "chip": "REAL +4.7%", "art": "candles", "geo": (-46.6, -23.5)},
     {"no": 15, "region": "EUROPE", "level": "REPORTED",
      "head": "World Bank gives Ukraine $450m as EU loan stalls",
      "deck": "$415m IBRD loan backed by Japan, $35m IDA credit.",
@@ -93,29 +93,39 @@ FEATURED = [
      "chip": "16-MO HIGH", "art": "yen", "geo": (139.7, 35.7)},
 ]
 
-# Briefs: number and one headline line each.
+# Briefs: number and one headline line each. Stage 2 (28 Nov): five
+# stage-1 briefs dropped (Congo mpox, Japan Tobacco, Macy's balloons,
+# NJ Transit, Sandpapergate), the China cabinet item promoted to the
+# featured tier, four featured items demoted into this list, market
+# briefs updated to Friday closes, and eight late wire stories added.
 BRIEFS = [
-    (17, "SAUDI CONDEMNS KUWAIT STRIKE; IRAN DENIES ROLE"),
+    (17, "IRAQ PM MOVES TO REIN IN ARMED GROUPS"),
     (18, "EUROPA LEAGUE: BOURNEMOUTH 2-1 AT CELTA; MILAN 4-2"),
-    (19, "NZ 246/5 ON DAY ONE OF 2ND TEST v INDIA"),
+    (19, "ARMED MEN KILL 17 IN NIGERIA\u2019S PLATEAU STATE"),
     (20, "CAMBODIA, THAILAND AGREE SITE VISIT IN SEA ROW"),
-    (21, "HETERO NEARS INDIA NOD FOR GENERIC HIV DRUG"),
-    (22, "CONGO MOBILISES AGAINST MPOX"),
-    (23, "AIRASIA DELAYS STAFF PAY TO MONTH-END, NOV\u2013MAR"),
-    (24, "JAPAN TOBACCO +2% ON IMPERIAL BRANDS TALK"),
-    (25, "RAND +1% TO 17.37 AS METALS RALLY"),
-    (26, "DOLLAR NEAR 22-MONTH PEAK; INDEX 103.81"),
-    (27, "US MARKETS REOPEN FOR HALF-DAY BLACK FRIDAY"),
-    (28, "MACY\u2019S BALLOONS RE-INFLATED FOR SATURDAY"),
-    (29, "NJ TRANSIT HONOURS RAIL TICKETS ON BUSES"),
-    (30, "EURO FLAT AT $1.0964; KIWI $0.5482"),
-    (31, "BRENT $96.14, +3.9% FOR THE WEEK"),
-    (32, "NIKKEI +0.7% FRI; KOSPI +2%"),
+    (21, "DOLLAR INDEX 104.04, NEAR 22-MONTH PEAK"),
+    (22, "SAUDI CONDEMNS KUWAIT STRIKE; IRAN DENIES ROLE"),
+    (23, "SEOUL SENDS SIX NORTH KOREANS HOME"),
+    (24, "KENYA CULT LEADER CONVICTED OVER 123 MORE DEATHS"),
+    (25, "EIGHT DEAD ON MIGRANT BOAT OFF CANARY ISLANDS"),
+    (26, "THANKSGIVING ONLINE SALES $37.2BN, +4.6%"),
+    (27, "HETERO NEARS INDIA NOD FOR GENERIC HIV DRUG"),
+    (28, "US NAVY DISABLES SHIP BREAKING IRAN BLOCKADE"),
+    (29, "AIRASIA DELAYS STAFF PAY TO MONTH-END, NOV\u2013MAR"),
+    (30, "MARSEILLE FAN VIOLENCE CONDEMNED; 11 HURT"),
+    (31, "EURO $1.0933; KIWI $0.5482"),
+    (32, "NIKKEI +0.7%; KOSPI +2%; MSCI ASIA EX-JAPAN +0.5%"),
     (33, "TWO-YEAR TREASURY YIELD 4.6705%"),
-    (34, "CHINA CABINET PLANS NEW MARKET POLICIES"),
-    (35, "SEOUL WEIGHS WIDER NAVY ROLE IN GULF OF OMAN"),
-    (36, "SANDPAPERGATE FORUM WILL NOT APPORTION BLAME"),
-    (37, "CHINA FACTORY SLUMP SEEN LASTING; PMI 49.4"),
+    (34, "IRAN WARNS ON GULF MILITARY PRESENCE"),
+    (35, "INDONESIA NICKEL TYCOON FACES TREASON CLAIM"),
+    (36, "RAND +1% TO 17.37 AS METALS RALLY"),
+    (37, "SPAIN PARTIES MAKE FINAL PITCH BEFORE SUNDAY VOTE"),
+    (38, "BRENT $96.14, +3.9% FOR THE WEEK"),
+    (39, "SEOUL WEIGHS WIDER NAVY ROLE IN GULF OF OMAN"),
+    (40, "ARGENTINA BANS CENTRAL BANK PRINTING FOR GOVT"),
+    (41, "NZ 246/5 ON DAY ONE OF 2ND TEST v INDIA"),
+    (42, "CPTPP TALKS: UAE, INDONESIA, PHILIPPINES IN QUEUE"),
+    (43, "CHINA PMI SEEN AT 49.4 (POLL); DATA DUE NOV 30"),
 ]
 
 # Emblematic figures for the numbers strip: big value, small caption.
@@ -125,13 +135,18 @@ FIGURES = [
     ("$96.14", "BRENT CRUDE, FRI"),
     ("40+", "DRONES DOWNED"),
     ("24 of 27", "EU BACKS UKRAINE LOAN"),
-    ("6", "N. KOREANS SENT HOME"),
+    ("+1.6%", "S&P 500, BEST WEEK SINCE APR 2025"),
     ("$254M", "GARMENT ORDERS"),
 ]
+
+# Stage-2 implementation note: the two-year Treasury yield of 4.6705%
+# could not be confirmed as Friday's close (half-day session); it is
+# kept as the near-close figure carried over from stage 1.
 
 # The day in time order. Times are UTC.
 TIMELINE = [
     ("EARLY HRS", "Drone crosses into Latvia"),
+    ("OVERNIGHT", "Russia fires 155 drones at Ukraine"),
     ("01:41", "EU summit ends with no deal"),
     ("04:44", "Seoul sends six North Koreans home"),
     ("05:12", "Iran warns on Gulf military presence"),
@@ -139,6 +154,8 @@ TIMELINE = [
     ("07:43", "Rand firms as metals rally"),
     ("07:51", "Paris, Sofia condemn Marseille violence"),
     ("AFTERNOON", "China stocks jump: STAR 50 +12%"),
+    ("14:04", "Nine Ukrainian children return home"),
+    ("18:00", "Wall Street closes: S&P +1.6%"),
 ]
 
 # Dated exclusions: day label, then what happened and why it is not
@@ -163,6 +180,12 @@ DATECHECK = [
     ("NOT YET",
      "Spain election Sun 29 Nov; OPEC+ 29 Nov; ITLOS Falklands ruling "
      "Sat 28 Nov; Macy\u2019s 100th parade Sat 28 Nov."),
+    ("SAT 28 NOV",
+     "NZ cricket day two; Peru helicopter crash, 8 killed; Halk TV "
+     "takeover; Gaza clinic strike; Bronson Reed dies \u2014 all 28 Nov, "
+     "not 27 Nov."),
+    ("UNVERIFIED",
+     "Trump\u2013Rutte wording claim; Nvidia credit watch \u2014 not used."),
 ]
 
 LEGEND = ("CONFIRMED = 2+ outlets  \u00b7  OFFICIAL = on the record  \u00b7  "

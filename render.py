@@ -431,8 +431,9 @@ def paint_pin(d, x, y, num, r=9):
 
 # Pins that would collide on the main map get a small push, with a
 # leader line back to the true spot.
-PIN_PUSH = {4: (-12, 10), 8: (12, -10), 5: (-12, -9), 14: (12, 10),
-            6: (-4, -12), 16: (12, 7)}
+PIN_PUSH = {4: (-12, 10), 8: (20, -4), 5: (-14, 2), 16: (12, 7),
+            3: (-13, 9), 7: (13, -10), 6: (11, 10), 10: (-16, -14),
+            11: (-13, -7), 12: (10, -8)}
 
 
 # ------------------------------------------------------------------ page
@@ -447,31 +448,31 @@ def build_page():
     f_mast = typeface(SERIF_X, 22)
     tw = d.textlength(day.PAPER_NAME, font=f_mast)
     d.text(((PAGE_W - tw) / 2, y), day.PAPER_NAME, font=f_mast, fill=INK)
-    y += 30
+    y += 25
     hline(d, x0, x1, y, width=2)
     y += 4
     f_date = typeface(SERIF_B, 38)
     tw = d.textlength(day.DAY_LINE, font=f_date)
     d.text(((PAGE_W - tw) / 2, y), day.DAY_LINE, font=f_date, fill=INK)
-    y += 46
+    y += 40
     f_dek = typeface(SERIF_I, 17)
     tw = d.textlength(day.DEK_LINE, font=f_dek)
     d.text(((PAGE_W - tw) / 2, y), day.DEK_LINE, font=f_dek, fill=RED)
-    y += 18
+    y += 17
     parts = ["%d STORIES" % day.STORY_TOTAL]
     parts += ["%s %d" % (name, n) for name, n in day.REGION_TALLY]
     region_line = "  \u00b7  ".join(parts)
     f_reg = typeface(SANS_B, 13)
     tw = d.textlength(region_line, font=f_reg)
     d.text(((PAGE_W - tw) / 2, y), region_line, font=f_reg, fill=INK)
-    y += 14
+    y += 13
     hline(d, x0, x1, y, width=2)
 
     # ---- numbers strip
     y += 4
     d.text((x0, y), "THE DAY IN NUMBERS", font=typeface(SANS_B, 12),
            fill=RED)
-    y += 12
+    y += 11
     cell_w = (x1 - x0) / len(day.FIGURES)
     for i, (val, cap) in enumerate(day.FIGURES):
         cx = x0 + i * cell_w
@@ -483,15 +484,15 @@ def build_page():
         d.text((cx + (cell_w - tw) / 2, y + 22), cap, font=f_cap,
                fill=FAINT)
         if i:
-            d.line([(cx, y + 2), (cx, y + 32)], fill=CARD_LINE, width=1)
-    y += 32
+            d.line([(cx, y + 2), (cx, y + 30)], fill=CARD_LINE, width=1)
+    y += 30
     hline(d, x0, x1, y)
 
     # ---- timeline, two columns
     y += 4
     d.text((x0, y), "THE DAY IN TIME \u2014 ALL TIMES UTC",
            font=typeface(SANS_B, 12), fill=RED)
-    y += 13
+    y += 12
     col_w = (x1 - x0) / 2
     f_time = typeface(SANS_B, 11)
     f_lab = typeface(SANS, 11)
@@ -499,16 +500,16 @@ def build_page():
         col = i % 2
         row = i // 2
         tx = x0 + col * col_w
-        ty = y + row * 12
+        ty = y + row * 10
         d.text((tx, ty), when, font=f_time, fill=RED)
         ww = d.textlength(when, font=f_time)
         d.text((tx + ww + 6, ty), what, font=f_lab, fill=INK)
-    y += 4 * 12 + 3
+    y += ((len(day.TIMELINE) + 1) // 2) * 10 + 3
     hline(d, x0, x1, y)
 
     # ---- three leads
     y += 4
-    lead_h = 156
+    lead_h = 150
     lead_w = (x1 - x0 - 16) / 3
     for i, item in enumerate(day.FEATURED[:3]):
         bx = x0 + i * (lead_w + 8)
@@ -533,7 +534,7 @@ def build_page():
         tw = d.textlength(item["region"], font=f_foot)
         d.text((bx + lead_w - 7 - tw, y + lead_h - 13), item["region"],
                font=f_foot, fill=FAINT)
-    y += lead_h + 4
+    y += lead_h + 3
 
     # ---- middle tier: 5 + 4 + 4 cards
     rows = [day.FEATURED[3:8], day.FEATURED[8:12], day.FEATURED[12:16]]
@@ -564,13 +565,13 @@ def build_page():
             tw = d.textlength(item["region"], font=f_foot)
             d.text((bx + cw - 6 - tw, y + card_h - 11), item["region"],
                    font=f_foot, fill=FAINT)
-        y += card_h + 4
+        y += card_h + 3
 
     # ---- map band
     d.text((x0, y), "WHERE IT HAPPENED \u2014 PIN NUMBERS MATCH STORY NUMBERS",
            font=typeface(SANS_B, 12), fill=RED)
-    y += 12
-    map_y0, map_y1 = y, y + 64
+    y += 11
+    map_y0, map_y1 = y, y + 55
     inset = (x1 - 268, map_y0, x1, map_y1)
     main_box = (x0, map_y0, x1 - 276, map_y1)
     d.rectangle([x0, map_y0, x1, map_y1], fill=SKY, outline=CARD_LINE)
@@ -579,7 +580,7 @@ def build_page():
            fill=FAINT)
     d.text((main_box[2] - 52, map_y1 - 14), "ATLANTIC",
            font=typeface(SANS, 9), fill=FAINT)
-    inset_nos = {1, 2, 12, 15}
+    inset_nos = {1, 2, 15}
     for item in day.FEATURED:
         lon, lat = item["geo"]
         if item["no"] in inset_nos:
@@ -601,31 +602,31 @@ def build_page():
         lon, lat = item["geo"]
         px, py = geo_to_xy(lon, lat, inset, -12, 38, 35, 62)
         paint_pin(d, px, py, item["no"])
-    y = map_y1 + 6
+    y = map_y1 + 5
 
     # ---- ALSO list, three columns
     d.text((x0, y), "ALSO ON FRIDAY 27 NOVEMBER",
            font=typeface(SANS_B, 12), fill=RED)
-    y += 12
+    y += 11
     f_also = typeface(SANS_B, 10)
     col_w = (x1 - x0) / 3
     for i, (num, head) in enumerate(day.BRIEFS):
         col = i % 3
         row = i // 3
         tx = x0 + col * col_w
-        ty = y + row * 10
+        ty = y + row * 9
         label = "%d. %s" % (num, head)
         while d.textlength(label, font=f_also) > col_w - 6 and len(label) > 4:
             label = label[:-4] + "\u2026"
         d.text((tx, ty), label, font=f_also, fill=INK)
-    y += 7 * 10 + 4
+    y += ((len(day.BRIEFS) + 2) // 3) * 9 + 4
     hline(d, x0, x1, y)
 
     # ---- DATE CHECK
     y += 4
     d.text((x0, y), "DATE CHECK \u2014 EXCLUDED AS OTHER DAYS\u2019 NEWS",
            font=typeface(SANS_B, 12), fill=RED)
-    y += 12
+    y += 11
     f_dc_lab = typeface(SANS_B, 10)
     f_dc = typeface(SANS, 10)
     for label, text in day.DATECHECK:
@@ -633,16 +634,16 @@ def build_page():
         d.text((x0, y), label, font=f_dc_lab, fill=RED)
         lines = split_lines(d, text, f_dc, (x1 - x0) - lw - 10)
         draw_lines(d, lines, x0 + lw + 8, y, f_dc, gap=0)
-        y += max(1, len(lines)) * 11 + 1
-    y += 2
+        y += max(1, len(lines)) * 10 + 1
+    y += 1
     hline(d, x0, x1, y)
 
     # ---- legend + footnote
-    y += 2
+    y += 1
     f_leg = typeface(SANS, 10)
     tw = d.textlength(day.LEGEND, font=f_leg)
     d.text(((PAGE_W - tw) / 2, y), day.LEGEND, font=f_leg, fill=INK)
-    y += 10
+    y += 9
     tw = d.textlength(day.FOOTNOTE, font=f_leg)
     d.text(((PAGE_W - tw) / 2, y), day.FOOTNOTE, font=f_leg, fill=FAINT)
     print("layout ends at y=%d (page height %d)" % (y + 10, PAGE_H))
